@@ -1,6 +1,6 @@
 # comics4kindle
 
-从`http://manhua.178.com`网站抓取最新漫画图片并下载到本地，生成 html 文件无广告地看漫画，同时支持生成 mobi 格式并发送到你的 kindle 邮箱（例如`comics4kindle@kindle.com`），这样就能够在 kindle 上看最新的漫画了（尽管 kindle 4/kindle touch 的 6 寸小屏幕看起来体验差了些）。
+从 [http://manhua.178.com](http://manhua.178.com) 网站抓取最新漫画图片并下载到本地，生成 html 文件无广告地看漫画，同时支持生成 mobi 格式并发送到你的 kindle 邮箱（例如`comics4kindle@kindle.com`），这样就能够在 kindle 上看最新的漫画了（尽管 kindle 4/kindle touch 的 6 寸小屏幕看起来体验差了些）。
 
 
 ## how
@@ -14,14 +14,14 @@ comics4kindle 用 python 完成，依赖两个 Python 的第三方模块，以�
 
 模块直接 sudo easy_install xxx 即可，不过如果是 Windows 下，pyquery 没那么容易安装，因为它依赖 lxml 模块，这个模块我是从非官方编译好的 exe(http://www.lfd.uci.edu/~gohlke/pythonlibs/) 进行安装的。
 
-至于我的 OS X 10.6.8，折腾好久都安装不成功（包括看官网文档 http://lxml.de/installation.html），先放弃在 Windows 下完成再说，虽然是很吸引人的模块。
+至于我的 OS X 10.6.8，折腾好久都安装不成功（包括看[官网文档](http://lxml.de/installation.html) ），先放弃在 Windows 下完成再说，虽然是很吸引人的模块。
 
-Amazon kindlegen，如果你的 Amazon 帐号地区是 China 的话，直接提示 unavailable，所以得修改下所在 country 才行。__安装完成之后记得将 kindlegen 添加到环境变量中，否则生成 mobi 会失败。__
+Amazon kindlegen，如果你的 Amazon 帐号地区是 China 的话，直接提示 unavailable，所以得修改下所在 country 才行。**安装完成之后记得将 kindlegen 添加到环境变量中，否则生成 mobi 会失败。**
 
 
 ## 如何使用
 
-目前只支持`海贼王hz` `火影hy` `死神ss` `妖精的尾巴yj`，要增加其他的自己到`http://manhua.178.com`网站看 URL 是咋样并添加到代码中就行。例如，海贼王的是 http://manhua.178.com/haizeiwang，最后面是 拼音而已，代码如下：
+目前只支持`海贼王hz` `火影hy` `死神ss` `妖精的尾巴yj`，要增加其他的自己到 [http://manhua.178.com](http://manhua.178.com) 网站看 URL 是咋样并添加到代码中就行。例如，海贼王的是 **http://manhua.178.com/haizeiwang**，最后面是拼音而已，代码如下：
 
     COMICS = {
         'hz': 'haizeiwang',
